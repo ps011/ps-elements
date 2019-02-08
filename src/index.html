@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/ps-elements.js"></script>
+
+</head>
+<body>
+  <ps-button text="Shadow with Ripple and href" shadow onclick="clicked(event)"></ps-button>
+  <script>
+    function clicked(e) {
+      console.log(e)
+      window.location.href = 'http://google.com'
+    }
+  </script>
+  <ps-button text="Without Shadow" ></ps-button>
+  <ps-button text="Raised With Shadow" raised shadow></ps-button>
+<br/>
+  <ps-button text="Shadow with Color" shadow background-color="red" text-color="white"></ps-button>
+  <ps-button text="Color Without Shadow" background-color="green" text-color="white"></ps-button>
+  <ps-button text="Raised With Shadow and Color" background-color="blue" text-color="white" raised shadow></ps-button>
+</body>
+</html>
