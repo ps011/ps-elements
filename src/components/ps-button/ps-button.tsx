@@ -5,7 +5,7 @@ import {Component, Element, Prop} from '@stencil/core';
   styleUrl: 'ps-button.scss',
   shadow: true
 })
-export class MyComponent {
+export class PsButton {
   class = ''
   style = {}
   @Element() element;
